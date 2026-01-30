@@ -5,21 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Suhail Foundation</title>
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/your-kit-code.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Instrument+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <script src="https://unpkg.com/scrollreveal"></script>
 </head>
 <body>
     <header class="header">
         <div class="container">
-            <div class="logo">  
+            <div class="logo">
                 <a href="#" id="home">
-                    <img src="logo.png" alt="Suhail Foundation Logo" style="width: 190px; height: auto;">
+                    <img src="logo.png" alt="Suhail Foundation Logo">
                 </a>
             </div>
             <nav class="nav">
-                <button class="mobile-menu-btn">
+                <button class="mobile-menu-btn" aria-label="Toggle menu">
                     <span class="hamburger"></span>
                 </button>
                 <ul class="nav-list">
@@ -34,80 +35,110 @@
 
     <main>
         <section class="hero">
+            <div class="hero-bg"></div>
             <div class="container">
-                <div class="hero-content animate__animated animate__fadeIn">
-                    <h2>Impacting Genetically-Affected Youth</h2>
-                    <p class="subtitle">
-                        We hope to empower those born with genetically-contributed disabilities on a journey to strive to become independent.
+                <div class="hero-content" data-animate="fadeUp">
+                    <p class="hero-eyebrow">The Suhail Foundation</p>
+                    <h1>Impacting Genetically-Affected Youth</h1>
+                    <p class="hero-subtitle">
+                        Empowering those born with genetically-contributed disabilities on a journey to strive toward independence.
                     </p>
                     <div class="cta-buttons">
                         <a href="#what-we-do" class="btn btn-primary">What We Do</a>
-                        <a href="#contribute" class="btn btn-secondary">Join Us</a>
+                        <a href="#contribute" class="btn btn-outline">Join Us</a>
                     </div>
                 </div>
-                <div class="hero-image animate__animated animate__fadeInRight">
-                    <!-- Replace with your actual illustration -->
-                    <img src="heropic.png" alt="Hero Picture" style="border-radius: 50%;">
+                <div class="hero-image" data-animate="fadeUp" data-delay="200">
+                    <img src="heropic.png" alt="Hero Picture">
+                </div>
+            </div>
+        </section>
+
+        <section class="stats-bar" data-animate="fadeUp">
+            <div class="container">
+                <div class="stats-grid">
+                    <div class="stat-item">
+                        <span class="stat-number">24</span>
+                        <span class="stat-label">Years of Suhail's Legacy</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <span class="stat-number">3</span>
+                        <span class="stat-label">Core Programs</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <span class="stat-number">DMD</span>
+                        <span class="stat-label">Primary Focus Area</span>
+                    </div>
                 </div>
             </div>
         </section>
 
         <section class="who-we-are" id="who-we-are">
             <div class="container">
-                <div class="who-we-are-images animate__animated" data-animate="animate__fadeInLeft">
-                    <img src="whoweare1.jpeg" alt="Team working together" class="image-1">
-                    <img src="whoweare2.jpeg" alt="Community outreach" class="image-2">
-                </div>
-                <div class="who-we-are-content animate__animated" data-animate="animate__fadeInRight">
+                <div class="section-header" data-animate="fadeUp">
+                    <p class="section-eyebrow">Our Story</p>
                     <h2>Who We Are</h2>
-                    <p class="section-subtitle">Empowering Communities, Creating Change</p>
-                    <p class="section-text">
-                        The Suhail Foundation is dedicated to empowering children with genetic conditions, particularly Duchenne Muscular Dystrophy (DMD). Our mission is to support these exceptional children on their journey toward independence, offering assistance with accessibility, specialized equipment, education, physical therapy, and social support.
-                        <span class="mobile-hide">
-                            <br> <br> Established in memory of our son, Suhail, who passed away at 24 in 2023 after living a remarkable life in the face of the challenges posed by DMD, the foundation aims to perpetuate his courageous spirit and remarkable accomplishments. Our goal is to help others reach their full potential, no matter their limitations.
-                            <br> <br> We aspire to create a movement founded on hope and positivity, reaching out to like-minded donors as our first step. At the Suhail Foundation, we firmly believe that, with the right resources and support, every child can lead a full and fulfilling life, and we are committed to serving as a source of assistance and opportunity for those facing the challenges of genetic conditions.
-                        </span>
-                    </p>
-                    <a href="#what-we-do" class="btn btn-primary">Learn More</a>
+                </div>
+                <div class="who-we-are-grid">
+                    <div class="who-we-are-images" data-animate="fadeUp" data-delay="100">
+                        <div class="image-stack">
+                            <img src="whoweare1.jpeg" alt="Team working together" class="image-1">
+                            <img src="whoweare2.jpeg" alt="Community outreach" class="image-2">
+                        </div>
+                    </div>
+                    <div class="who-we-are-content" data-animate="fadeUp" data-delay="200">
+                        <p class="lead-text">Empowering Communities, Creating Change</p>
+                        <p class="body-text">
+                            The Suhail Foundation is dedicated to empowering children with genetic conditions, particularly Duchenne Muscular Dystrophy (DMD). Our mission is to support these exceptional children on their journey toward independence, offering assistance with accessibility, specialized equipment, education, physical therapy, and social support.
+                        </p>
+                        <p class="body-text mobile-hide">
+                            Established in memory of our son, Suhail, who passed away at 24 in 2023 after living a remarkable life in the face of the challenges posed by DMD, the foundation aims to perpetuate his courageous spirit and remarkable accomplishments.
+                        </p>
+                        <p class="body-text mobile-hide">
+                            We aspire to create a movement founded on hope and positivity, reaching out to like-minded donors as our first step. At the Suhail Foundation, we firmly believe that, with the right resources and support, every child can lead a full and fulfilling life.
+                        </p>
+                        <a href="#what-we-do" class="btn btn-primary">Learn More</a>
+                    </div>
                 </div>
             </div>
         </section>
 
         <section class="what-we-do" id="what-we-do">
             <div class="container">
-                <div class="what-we-do-content">
-                    <h2 class="animate__animated" data-animate="animate__fadeInUp">What We Do</h2>
-                    <p class="section-subtitle animate__animated" data-animate="animate__fadeInUp">Making Real Impact Through Action</p>
-                    <div class="services-grid">
-                        <div class="service-card animate__animated" data-animate="animate__fadeInUp" data-delay="100">
-                            <div class="service-icon">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" fill="currentColor" class="bi bi-backpack" viewBox="0 0 16 16">
-                                    <path d="M4.04 7.43a4 4 0 0 1 7.92 0 .5.5 0 1 1-.99.14 3 3 0 0 0-5.94 0 .5.5 0 1 1-.99-.14M4 9.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-.5.5h-7a.5.5 0 0 1-.5-.5zm1 .5v3h6v-3h-1v.5a.5.5 0 0 1-1 0V10z"/>
-                                    <path d="M6 2.341V2a2 2 0 1 1 4 0v.341c2.33.824 4 3.047 4 5.659v5.5a2.5 2.5 0 0 1-2.5 2.5h-7A2.5 2.5 0 0 1 2 13.5V8a6 6 0 0 1 4-5.659M7 2v.083a6 6 0 0 1 2 0V2a1 1 0 0 0-2 0m1 1a5 5 0 0 0-5 5v5.5A1.5 1.5 0 0 0 4.5 15h7a1.5 1.5 0 0 0 1.5-1.5V8a5 5 0 0 0-5-5"/>
-                                  </svg>
-                            </div>
-                            <h3>Education</h3>
-                            <p>Providing quality education and skill development programs to empower communities.</p>
+                <div class="section-header" data-animate="fadeUp">
+                    <p class="section-eyebrow">Our Impact</p>
+                    <h2>What We Do</h2>
+                    <p class="section-description">Making real impact through action</p>
+                </div>
+                <div class="services-grid">
+                    <div class="service-card" data-animate="fadeUp" data-delay="100">
+                        <div class="service-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                                <path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c0 1.1 2.7 3 6 3s6-1.9 6-3v-5"/>
+                            </svg>
                         </div>
-                        <div class="service-card animate__animated" data-animate="animate__fadeInUp" data-delay="200">
-                            <div class="service-icon">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" fill="currentColor" class="bi bi-hospital" viewBox="0 0 16 16">
-                                    <path d="M8.5 5.034v1.1l.953-.55.5.867L9 7l.953.55-.5.866-.953-.55v1.1h-1v-1.1l-.953.55-.5-.866L7 7l-.953-.55.5-.866.953.55v-1.1zM13.25 9a.25.25 0 0 0-.25.25v.5c0 .138.112.25.25.25h.5a.25.25 0 0 0 .25-.25v-.5a.25.25 0 0 0-.25-.25zM13 11.25a.25.25 0 0 1 .25-.25h.5a.25.25 0 0 1 .25.25v.5a.25.25 0 0 1-.25.25h-.5a.25.25 0 0 1-.25-.25zm.25 1.75a.25.25 0 0 0-.25.25v.5c0 .138.112.25.25.25h.5a.25.25 0 0 0 .25-.25v-.5a.25.25 0 0 0-.25-.25zm-11-4a.25.25 0 0 0-.25.25v.5c0 .138.112.25.25.25h.5A.25.25 0 0 0 3 9.75v-.5A.25.25 0 0 0 2.75 9zm0 2a.25.25 0 0 0-.25.25v.5c0 .138.112.25.25.25h.5a.25.25 0 0 0 .25-.25v-.5a.25.25 0 0 0-.25-.25zM2 13.25a.25.25 0 0 1 .25-.25h.5a.25.25 0 0 1 .25.25v.5a.25.25 0 0 1-.25.25h-.5a.25.25 0 0 1-.25-.25z"/>
-                                    <path d="M5 1a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v1a1 1 0 0 1 1 1v4h3a1 1 0 0 1 1 1v7a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1V8a1 1 0 0 1 1-1h3V3a1 1 0 0 1 1-1zm2 14h2v-3H7zm3 0h1V3H5v12h1v-3a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1zm0-14H6v1h4zm2 7v7h3V8zm-8 7V8H1v7z"/>
-                                  </svg>
-                            </div>
-                            <h3>Healthcare</h3>
-                            <p>Ensuring access to essential healthcare services and medical resources.</p>
+                        <h3>Education</h3>
+                        <p>Providing quality education and skill development programs to empower communities and unlock potential.</p>
+                    </div>
+                    <div class="service-card" data-animate="fadeUp" data-delay="200">
+                        <div class="service-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                                <path d="M4.8 2.3A.3.3 0 1 0 5 2H4a2 2 0 0 0-2 2v5a6 6 0 0 0 6 6 6 6 0 0 0 6-6V4a2 2 0 0 0-2-2h-1a.2.2 0 1 0 .3.3"/><path d="M8 15v1a6 6 0 0 0 6 6 6 6 0 0 0 6-6v-4"/><path d="M22 10 A2 2 0 0 0 20 8 A2 2 0 0 0 18 10 L18 10 A2 2 0 0 0 20 12 A2 2 0 0 0 22 10 Z"/>
+                            </svg>
                         </div>
-                        <div class="service-card animate__animated" data-animate="animate__fadeInUp" data-delay="300">
-                            <div class="service-icon">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" fill="currentColor" class="bi bi-people-fill" viewBox="0 0 16 16">
-                                    <path d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6m-5.784 6A2.24 2.24 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.3 6.3 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1zM4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5"/>
-                                  </svg>
-                            </div>
-                            <h3>Community Development</h3>
-                            <p>Building stronger communities through sustainable development initiatives.</p>
+                        <h3>Healthcare</h3>
+                        <p>Ensuring access to essential healthcare services, medical resources, and specialized support systems.</p>
+                    </div>
+                    <div class="service-card" data-animate="fadeUp" data-delay="300">
+                        <div class="service-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                                <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                            </svg>
                         </div>
+                        <h3>Community</h3>
+                        <p>Building stronger communities through sustainable development initiatives and meaningful connections.</p>
                     </div>
                 </div>
             </div>
@@ -115,23 +146,26 @@
 
         <section class="contribute" id="contribute">
             <div class="container">
-                <div class="contribute-content">
-                    <h2 class="animate__animated" data-animate="animate__fadeInUp">Contribute</h2>
-                    <p class="section-subtitle animate__animated" data-animate="animate__fadeInUp" style="color: #fff">Join Us in Making a Difference</p>
-                    <div class="contribute-grid">
-                        <div class="contribute-card animate__animated" data-animate="animate__fadeInLeft">
+                <div class="section-header" data-animate="fadeUp">
+                    <p class="section-eyebrow">Get Involved</p>
+                    <h2>Contribute</h2>
+                    <p class="section-description">Join us in making a difference</p>
+                </div>
+                <div class="contribute-grid">
+                    <div class="contribute-card" data-animate="fadeUp" data-delay="100">
+                        <div class="contribute-card-inner">
                             <h3>Donate</h3>
-                            <p>Support our initiatives through financial contributions. Every donation makes a difference.</p>
-                            <style>.pp-5672GJYRQGWMC{text-align:center;border:none;border-radius:3rem;min-width:11.625rem;padding:0 2rem;height:3.5rem;background-color:#4CAF50;color:#fff;font-family:"Helvetica Neue",Arial,sans-serif;font-size:1rem;line-height:1.25rem;cursor:pointer;}</style>
-<form action="https://www.paypal.com/ncp/payment/5672GJYRQGWMC" method="post" target="_top" style="display:inline-grid;justify-items:center;align-content:start;gap:0.5rem;">
-  <input class="pp-5672GJYRQGWMC btn btn-primary" type="submit" value="Donate Now" />
-  
-  <section> Powered by <img src="https://www.paypalobjects.com/paypal-ui/logos/svg/paypal-wordmark-color.svg" alt="paypal" style="height:0.875rem;vertical-align:middle;"/></section>
-</form>
+                            <p>Support our initiatives through financial contributions. Every donation makes a difference in the lives of children with genetic conditions.</p>
+                            <form action="https://www.paypal.com/ncp/payment/5672GJYRQGWMC" method="post" target="_top" class="donate-form">
+                                <input class="btn btn-primary" type="submit" value="Donate Now" />
+                                <span class="powered-by">Powered by <img src="https://www.paypalobjects.com/paypal-ui/logos/svg/paypal-wordmark-color.svg" alt="PayPal" class="paypal-logo"/></span>
+                            </form>
                         </div>
-                        <div class="contribute-card animate__animated" data-animate="animate__fadeInRight">
+                    </div>
+                    <div class="contribute-card" data-animate="fadeUp" data-delay="200">
+                        <div class="contribute-card-inner">
                             <h3>Volunteer</h3>
-                            <p>Join our team of dedicated volunteers and help us create positive change in communities.</p>
+                            <p>Join our team of dedicated volunteers and help us create positive change in communities across the country.</p>
                             <a href="https://forms.gle/6zej21SasCvhDw2G6" target="_blank" class="btn btn-primary">Join as Volunteer</a>
                         </div>
                     </div>
@@ -147,10 +181,18 @@
                     <img src="logo.png" alt="Suhail Foundation Logo" class="footer-logo">
                     <p>Making a positive impact through community action and sustainable development.</p>
                     <div class="social-links">
-                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
-                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" aria-label="Facebook">
+                            <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+                        </a>
+                        <a href="#" aria-label="Twitter">
+                            <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+                        </a>
+                        <a href="#" aria-label="Instagram">
+                            <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+                        </a>
+                        <a href="#" aria-label="LinkedIn">
+                            <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                        </a>
                     </div>
                 </div>
                 <div class="footer-links">
@@ -163,44 +205,53 @@
                     </ul>
                 </div>
                 <div class="footer-contact">
-                    <h4><span style="color: #1a1a1a;">|</span>Contact Us</h4>
+                    <h4>Contact Us</h4>
                     <ul>
-                        <li><i class="fas fa-envelope"></i> info@suhailfoundation.org</li>
+                        <li>info@suhailfoundation.org</li>
                     </ul>
                 </div>
-
             </div>
             <div class="footer-bottom">
                 <p>&copy; 2024 Suhail Foundation. All rights reserved.</p>
-                <br>
-                <p>Developed by Siddhant Khapra & Ansh Mehta</p>
+                <p class="credits">Developed by Siddhant Khapra & Ansh Mehta</p>
             </div>
         </div>
     </footer>
 
     <script>
-        // Initialize ScrollReveal
-        ScrollReveal().reveal('[data-animate]', {
-            delay: 200,
-            distance: '50px',
-            duration: 1000,
-            origin: 'bottom',
-            opacity: 0,
-            easing: 'cubic-bezier(0.5, 0, 0, 1)',
-            interval: 150,
-            beforeReveal: (el) => {
-                el.classList.add(el.dataset.animate);
+        // Scroll-triggered animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const delay = entry.target.dataset.delay || 0;
+                    setTimeout(() => {
+                        entry.target.classList.add('visible');
+                    }, parseInt(delay));
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('[data-animate]').forEach(el => {
+            observer.observe(el);
+        });
+
+        // Header scroll effect
+        const header = document.querySelector('.header');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
             }
         });
 
-        // Add delay for elements that need it
-        document.querySelectorAll('[data-delay]').forEach(el => {
-            ScrollReveal().reveal(el, {
-                delay: parseInt(el.dataset.delay)
-            });
-        });
-
-        // Mobile menu toggle with animation and scroll lock
+        // Mobile menu toggle
         const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
         const navList = document.querySelector('.nav-list');
         const body = document.body;
@@ -209,17 +260,8 @@
             navList.classList.toggle('active');
             this.classList.toggle('active');
             body.classList.toggle('menu-open');
-            
-            if(navList.classList.contains('active')) {
-                navList.classList.add('animate__animated', 'animate__fadeIn');
-                navList.classList.remove('animate__fadeOut');
-            } else {
-                navList.classList.add('animate__animated', 'animate__fadeOut');
-                navList.classList.remove('animate__fadeIn');
-            }
         });
 
-        // Close mobile menu when clicking a link
         document.querySelectorAll('.nav-list a').forEach(link => {
             link.addEventListener('click', () => {
                 navList.classList.remove('active');
@@ -228,13 +270,23 @@
             });
         });
 
-        // Close mobile menu when resizing to desktop
         window.addEventListener('resize', () => {
             if (window.innerWidth > 768) {
                 navList.classList.remove('active');
                 mobileMenuBtn.classList.remove('active');
                 body.classList.remove('menu-open');
             }
+        });
+
+        // Smooth scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            });
         });
     </script>
 </body>
